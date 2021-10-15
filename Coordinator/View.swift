@@ -18,9 +18,15 @@ class View: UIView {
         return button
     }()
     
-    init() {
+    init(viewModel: ViewModel) {
         super.init(frame: .zero)
         backgroundColor = .systemBackground
+        
+        let action = UIAction { _ in
+            viewModel.nextButtonPressed()
+        }
+        
+        button.addAction(action, for: .touchUpInside)
         
         addSubview(button)
                 
