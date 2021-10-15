@@ -14,7 +14,6 @@ class View: UIView {
         button.titleLabel?.adjustsFontForContentSizeCategory = true
         button.titleLabel?.font = .preferredFont(forTextStyle: .title1)
         button.setTitleColor(.label, for: .normal)
-        button.setTitle("Next", for: .normal)
         return button
     }()
     
@@ -27,6 +26,7 @@ class View: UIView {
         }
         
         button.addAction(action, for: .touchUpInside)
+        button.setTitle(viewModel.buttonTitle, for: .normal)
         
         addSubview(button)
                 

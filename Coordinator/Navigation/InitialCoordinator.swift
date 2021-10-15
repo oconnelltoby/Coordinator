@@ -15,15 +15,15 @@ class InitialCoordinator: Coordinating {
     }
     
     func start() {
-        showViewController(title: "A", nextButtonPressed: showB)
+        showViewController(title: "A", buttonTitle: "Go to B", nextButtonPressed: showB)
     }
     
     private func showB() {
-        showViewController(title: "B", nextButtonPressed: showC)
+        showViewController(title: "B", buttonTitle: "Go to C", nextButtonPressed: showC)
     }
     
     private func showC() {
-        showViewController(title: "C", nextButtonPressed: showSecondaryCoordinator)
+        showViewController(title: "C", buttonTitle: "Present modal", nextButtonPressed: showSecondaryCoordinator)
     }
     
     private func showSecondaryCoordinator() {
@@ -36,8 +36,8 @@ class InitialCoordinator: Coordinating {
         self.navigationController?.present(navigationController, animated: true)
     }
     
-    private func showViewController(title: String, nextButtonPressed: @escaping () -> Void) {
-        let viewModel = ViewModel(title: title, nextButtonPressed: nextButtonPressed)
+    private func showViewController(title: String, buttonTitle: String, nextButtonPressed: @escaping () -> Void) {
+        let viewModel = ViewModel(title: title, buttonTitle: buttonTitle, nextButtonPressed: nextButtonPressed)
         let viewController = ViewController(viewModel: viewModel)
         navigationController?.pushViewController(viewController, animated: true)
     }

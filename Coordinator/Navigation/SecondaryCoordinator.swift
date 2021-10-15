@@ -17,19 +17,19 @@ class SecondaryCoordinator: Coordinating {
     }
     
     func start() {
-        showViewController(title: "1", nextButtonPressed: show2)
+        showViewController(title: "1", buttonTitle: "Go to 2", nextButtonPressed: show2)
     }
     
     private func show2() {
-        showViewController(title: "2", nextButtonPressed: show3)
+        showViewController(title: "2", buttonTitle: "Go to 3", nextButtonPressed: show3)
     }
     
     private func show3() {
-        showViewController(title: "3", nextButtonPressed: completion)
+        showViewController(title: "3", buttonTitle: "return", nextButtonPressed: completion)
     }
     
-    private func showViewController(title: String, nextButtonPressed: @escaping () -> Void) {
-        let viewModel = ViewModel(title: title, nextButtonPressed: nextButtonPressed)
+    private func showViewController(title: String, buttonTitle: String, nextButtonPressed: @escaping () -> Void) {
+        let viewModel = ViewModel(title: title, buttonTitle: buttonTitle, nextButtonPressed: nextButtonPressed)
         let viewController = ViewController(viewModel: viewModel)
         navigationController?.pushViewController(viewController, animated: true)
     }
