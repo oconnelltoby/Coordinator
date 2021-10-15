@@ -6,5 +6,6 @@
 //
 
 struct ViewModel {
+    var title: String
     var nextButtonPressed: () -> Void
 }

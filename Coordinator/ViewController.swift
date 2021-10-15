@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        self.title = viewModel.title
     }
     
     required init?(coder: NSCoder) {

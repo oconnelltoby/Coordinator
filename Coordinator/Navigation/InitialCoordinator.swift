@@ -15,7 +15,7 @@ class InitialCoordinator: Coordinating {
     }
     
     func start() {
-        let viewModel = ViewModel(nextButtonPressed: {})
+        let viewModel = ViewModel(title: "A", nextButtonPressed: {})
         let viewController = ViewController(viewModel: viewModel)
         navigationController?.pushViewController(viewController, animated: false)
     }
