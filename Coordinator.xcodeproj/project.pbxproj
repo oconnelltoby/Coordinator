@@ -18,6 +18,7 @@
 		F1750AFE271A28CD00455B03 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AFD271A28CD00455B03 /* View.swift */; };
 		F1750B00271A2A1F00455B03 /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AFF271A2A1F00455B03 /* InitialCoordinator.swift */; };
 		F1750B02271A2BAA00455B03 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750B01271A2BAA00455B03 /* ViewModel.swift */; };
+        F1750B04271A333100455B03 /* SecondaryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750B03271A333100455B03 /* SecondaryCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F1750AFD271A28CD00455B03 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		F1750AFF271A2A1F00455B03 /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
 		F1750B01271A2BAA00455B03 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+        F1750B03271A333100455B03 /* SecondaryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				F1750AF4271A285500455B03 /* Coordinating.swift */,
 				F1750AFF271A2A1F00455B03 /* InitialCoordinator.swift */,
+                F1750B03271A333100455B03 /* SecondaryCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				F1750AF9271A285500455B03 /* Coordinating.swift in Sources */,
 				F1750AC5271A253500455B03 /* SceneDelegate.swift in Sources */,
 				F1750B02271A2BAA00455B03 /* ViewModel.swift in Sources */,
+                F1750B04271A333100455B03 /* SecondaryCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

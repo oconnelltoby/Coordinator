@@ -23,7 +23,17 @@ class InitialCoordinator: Coordinating {
     }
     
     private func showC() {
-        showViewController(title: "C", nextButtonPressed: {})
+        showViewController(title: "C", nextButtonPressed: showSecondaryCoordinator)
+    }
+    
+    private func showSecondaryCoordinator() {
+        let navigationController = UINavigationController()
+        let completion = {
+            self.navigationController?.dismiss(animated: true)
+            return
+        }
+        SecondaryCoordinator(navigationController: navigationController, completion: completion).start()
+        self.navigationController?.present(navigationController, animated: true)
     }
     
     private func showViewController(title: String, nextButtonPressed: @escaping () -> Void) {
