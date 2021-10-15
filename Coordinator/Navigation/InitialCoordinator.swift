@@ -21,7 +21,13 @@ class InitialCoordinator: Coordinating {
     }
     
     private func showB() {
-        let viewModel = ViewModel(title: "B", nextButtonPressed: {})
+        let viewModel = ViewModel(title: "B", nextButtonPressed: showC)
+        let viewController = ViewController(viewModel: viewModel)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    private func showC() {
+        let viewModel = ViewModel(title: "C", nextButtonPressed: {})
         let viewController = ViewController(viewModel: viewModel)
         navigationController?.pushViewController(viewController, animated: true)
     }
