@@ -15,19 +15,19 @@ class InitialCoordinator: Coordinating {
     }
     
     func start() {
-        let viewModel = ViewModel(title: "A", nextButtonPressed: showB)
-        let viewController = ViewController(viewModel: viewModel)
-        navigationController?.pushViewController(viewController, animated: false)
+        showViewController(title: "A", nextButtonPressed: showB)
     }
     
     private func showB() {
-        let viewModel = ViewModel(title: "B", nextButtonPressed: showC)
-        let viewController = ViewController(viewModel: viewModel)
-        navigationController?.pushViewController(viewController, animated: true)
+        showViewController(title: "B", nextButtonPressed: showC)
     }
     
     private func showC() {
-        let viewModel = ViewModel(title: "C", nextButtonPressed: {})
+        showViewController(title: "C", nextButtonPressed: {})
+    }
+    
+    private func showViewController(title: String, nextButtonPressed: @escaping () -> Void) {
+        let viewModel = ViewModel(title: title, nextButtonPressed: nextButtonPressed)
         let viewController = ViewController(viewModel: viewModel)
         navigationController?.pushViewController(viewController, animated: true)
     }
