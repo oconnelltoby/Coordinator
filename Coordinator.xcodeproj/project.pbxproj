@@ -16,6 +16,7 @@
 		F1750AE4271A253600455B03 /* CoordinatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AE3271A253600455B03 /* CoordinatorUITests.swift */; };
 		F1750AF9271A285500455B03 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AF4271A285500455B03 /* Coordinating.swift */; };
 		F1750AFE271A28CD00455B03 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AFD271A28CD00455B03 /* View.swift */; };
+		F1750B00271A2A1F00455B03 /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AFF271A2A1F00455B03 /* InitialCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F1750AE3271A253600455B03 /* CoordinatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorUITests.swift; sourceTree = "<group>"; };
 		F1750AF4271A285500455B03 /* Coordinating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
 		F1750AFD271A28CD00455B03 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		F1750AFF271A2A1F00455B03 /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				F1750AF4271A285500455B03 /* Coordinating.swift */,
+				F1750AFF271A2A1F00455B03 /* InitialCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1750AC7271A253500455B03 /* ViewController.swift in Sources */,
+				F1750B00271A2A1F00455B03 /* InitialCoordinator.swift in Sources */,
 				F1750AC3271A253500455B03 /* AppDelegate.swift in Sources */,
 				F1750AFE271A28CD00455B03 /* View.swift in Sources */,
 				F1750AF9271A285500455B03 /* Coordinating.swift in Sources */,
