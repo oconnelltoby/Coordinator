@@ -17,6 +17,7 @@
 		F1750AF9271A285500455B03 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AF4271A285500455B03 /* Coordinating.swift */; };
 		F1750AFE271A28CD00455B03 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AFD271A28CD00455B03 /* View.swift */; };
 		F1750B00271A2A1F00455B03 /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AFF271A2A1F00455B03 /* InitialCoordinator.swift */; };
+		F1750B02271A2BAA00455B03 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750B01271A2BAA00455B03 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F1750AF4271A285500455B03 /* Coordinating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
 		F1750AFD271A28CD00455B03 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		F1750AFF271A2A1F00455B03 /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
+		F1750B01271A2BAA00455B03 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				F1750AC2271A253500455B03 /* AppDelegate.swift */,
 				F1750AC4271A253500455B03 /* SceneDelegate.swift */,
 				F1750AC6271A253500455B03 /* ViewController.swift */,
+				F1750B01271A2BAA00455B03 /* ViewModel.swift */,
 				F1750AFD271A28CD00455B03 /* View.swift */,
 				F1750ACB271A253600455B03 /* Assets.xcassets */,
 				F1750ACD271A253600455B03 /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 				F1750AFE271A28CD00455B03 /* View.swift in Sources */,
 				F1750AF9271A285500455B03 /* Coordinating.swift in Sources */,
 				F1750AC5271A253500455B03 /* SceneDelegate.swift in Sources */,
+				F1750B02271A2BAA00455B03 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
