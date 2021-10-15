@@ -15,6 +15,7 @@
 		F1750ADA271A253600455B03 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AD9271A253600455B03 /* CoordinatorTests.swift */; };
 		F1750AE4271A253600455B03 /* CoordinatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AE3271A253600455B03 /* CoordinatorUITests.swift */; };
 		F1750AF9271A285500455B03 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AF4271A285500455B03 /* Coordinating.swift */; };
+		F1750AFE271A28CD00455B03 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AFD271A28CD00455B03 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F1750ADF271A253600455B03 /* CoordinatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1750AE3271A253600455B03 /* CoordinatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorUITests.swift; sourceTree = "<group>"; };
 		F1750AF4271A285500455B03 /* Coordinating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
+		F1750AFD271A28CD00455B03 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				F1750AC2271A253500455B03 /* AppDelegate.swift */,
 				F1750AC4271A253500455B03 /* SceneDelegate.swift */,
 				F1750AC6271A253500455B03 /* ViewController.swift */,
+				F1750AFD271A28CD00455B03 /* View.swift */,
 				F1750ACB271A253600455B03 /* Assets.xcassets */,
 				F1750ACD271A253600455B03 /* LaunchScreen.storyboard */,
 				F1750AD0271A253600455B03 /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				F1750AC7271A253500455B03 /* ViewController.swift in Sources */,
 				F1750AC3271A253500455B03 /* AppDelegate.swift in Sources */,
+				F1750AFE271A28CD00455B03 /* View.swift in Sources */,
 				F1750AF9271A285500455B03 /* Coordinating.swift in Sources */,
 				F1750AC5271A253500455B03 /* SceneDelegate.swift in Sources */,
 			);
