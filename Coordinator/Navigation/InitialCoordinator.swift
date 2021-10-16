@@ -27,13 +27,7 @@ class InitialCoordinator: Coordinating {
     }
     
     private func showSecondaryCoordinator() {
-        let navigationController = UINavigationController()
-        let completion = {
-            self.navigationController?.dismiss(animated: true)
-            return
-        }
-        SecondaryCoordinator(navigationController: navigationController, completion: completion).start()
-        self.navigationController?.present(navigationController, animated: true)
+        ModalCoordinator(navigationController: navigationController, builder: SecondaryCoordinator.init).start()
     }
     
     private func showViewController(title: String, buttonTitle: String, nextButtonPressed: @escaping () -> Void) {
