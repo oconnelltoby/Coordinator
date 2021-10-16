@@ -19,7 +19,7 @@ extension ViewControllerCoordinating {
         navigationController?.pushViewController(viewController, animated: true)
     }
     
-    func showViewControllers(screens: [(title: String, buttonTitle: String, action: ViewControllerButtonAction)]) {
+    func showScreens(_ screens: (title: String, buttonTitle: String, action: ViewControllerButtonAction)...) {
         screens.reversed().reduce(nil as (() -> Void)?) { presentNext, screen in
             let nextButtonPressed = {
                 perform(action: screen.action, presentNext: presentNext)

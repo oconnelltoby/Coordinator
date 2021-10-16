@@ -17,12 +17,10 @@ class SecondaryCoordinator: ViewControllerCoordinating {
     }
     
     func start() {        
-        showViewControllers(
-            screens: [
-                (title: "1", buttonTitle: "Go to 2", action: .presentNext),
-                (title: "2", buttonTitle: "Go to 3", action: .presentNext),
-                (title: "3", buttonTitle: "return", action: .custom(completion))
-            ]
+        showScreens(
+            (title: "1", buttonTitle: "Go to 2", action: .presentNext),
+            (title: "2", buttonTitle: "Go to 3", action: .presentNext),
+            (title: "3", buttonTitle: "return", action: .custom(completion))
         )
     }
 }

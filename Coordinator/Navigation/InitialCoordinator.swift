@@ -15,12 +15,10 @@ class InitialCoordinator: ViewControllerCoordinating {
     }
     
     func start() {
-        showViewControllers(
-            screens: [
-                (title: "A", buttonTitle: "Go to B", action: .presentNext),
-                (title: "B", buttonTitle: "Go to C", action: .presentNext),
-                (title: "C", buttonTitle: "Present Modal", action: .custom(showSecondaryCoordinator))
-            ]
+        showScreens(
+            (title: "A", buttonTitle: "Go to B", action: .presentNext),
+            (title: "B", buttonTitle: "Go to C", action: .presentNext),
+            (title: "C", buttonTitle: "Present Modal", action: .custom(showSecondaryCoordinator))
         )
     }
     
