@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondaryCoordinator: Coordinating {
+class SecondaryCoordinator: ViewControllerCoordinating {
     weak var navigationController: UINavigationController?
     private let completion: () -> Void
     
@@ -16,21 +16,13 @@ class SecondaryCoordinator: Coordinating {
         self.completion = completion
     }
     
-    func start() {
-        showViewController(title: "1", buttonTitle: "Go to 2", nextButtonPressed: show2)
-    }
-    
-    private func show2() {
-        showViewController(title: "2", buttonTitle: "Go to 3", nextButtonPressed: show3)
-    }
-    
-    private func show3() {
-        showViewController(title: "3", buttonTitle: "return", nextButtonPressed: completion)
-    }
-    
-    private func showViewController(title: String, buttonTitle: String, nextButtonPressed: @escaping () -> Void) {
-        let viewModel = ViewModel(title: title, buttonTitle: buttonTitle, nextButtonPressed: nextButtonPressed)
-        let viewController = ViewController(viewModel: viewModel)
-        navigationController?.pushViewController(viewController, animated: true)
+    func start() {        
+        showViewControllers(
+            screens: [
+                (title: "1", buttonTitle: "Go to 2", action: .presentNext),
+                (title: "2", buttonTitle: "Go to 3", action: .presentNext),
+                (title: "3", buttonTitle: "return", action: .custom(completion))
+            ]
+        )
     }
 }
