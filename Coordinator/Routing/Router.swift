@@ -11,6 +11,11 @@ struct Router {
     weak var navigationController: UINavigationController?
     
     func nextButtonPressed() {
-        ModalCoordinator(navigationController: navigationController, builder: SecondaryCoordinator.init).start()
+        SecondaryCoordinator(
+            navigationController: navigationController,
+            completion: { [weak navigationController] in
+                navigationController?.dismiss(animated: true)
+            }
+        ).start()
     }
 }

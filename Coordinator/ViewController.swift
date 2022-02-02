@@ -22,6 +22,10 @@ class ViewController: UIViewController {
     
     override func loadView() {
         view = View(viewModel: viewModel)
+        if case let .cross(dismiss) = viewModel.dismissButtonType {
+            let cross = UIImage(systemName: "xmark")!
+            navigationItem.rightBarButtonItem = BarButtonItem(image: cross, action: dismiss)
+        }
     }
 }
 

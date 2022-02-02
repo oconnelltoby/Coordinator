@@ -18,7 +18,8 @@ class InitialCoordinator: ViewControllerCoordinating {
         showScreens(
             (title: "A", buttonTitle: "Go to B", action: .presentNext),
             (title: "B", buttonTitle: "Go to C", action: .presentNext),
-            (title: "C", buttonTitle: "Show Routing Screen", action: .custom(showRoutingViewController))
+            (title: "C", buttonTitle: "Show Routing Screen", action: .custom(showRoutingViewController)),
+            presentationType: .push
         )
     }
     

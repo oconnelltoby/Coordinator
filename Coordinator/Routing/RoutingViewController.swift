@@ -24,7 +24,8 @@ class RoutingViewController: UIViewController {
         let viewModel = ViewModel(
             title: viewModel.title,
             buttonTitle: viewModel.buttonTitle,
-            nextButtonPressed: viewModel.router.nextButtonPressed
+            nextButtonPressed: viewModel.router.nextButtonPressed,
+            dismissButtonType: .none
         )
         view = View(viewModel: viewModel)
     }

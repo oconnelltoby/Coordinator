@@ -9,4 +9,11 @@ struct ViewModel {
     var title: String
     var buttonTitle: String
     var nextButtonPressed: () -> Void
+    
+    enum DismissButtonType {
+        case none
+        case cross(action: () -> Void)
+    }
+    
+    var dismissButtonType: DismissButtonType
 }
