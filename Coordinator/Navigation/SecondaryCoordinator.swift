@@ -10,18 +10,20 @@ import UIKit
 class SecondaryCoordinator: ViewControllerCoordinating {
     weak var navigationController: UINavigationController?
     private let completion: () -> Void
+    let presentationType: PresentationType = .modal
     
-    init(navigationController: UINavigationController?, completion: @escaping () -> Void) {
+    init(navigationController: UINavigationController?) {
         self.navigationController = navigationController
-        self.completion = completion
+        completion = { [weak navigationController] in
+            navigationController?.dismiss(animated: true)
+        }
     }
     
     func start() {        
         showScreens(
             (title: "1", buttonTitle: "Go to 2", action: .presentNext),
             (title: "2", buttonTitle: "Go to 3", action: .presentNext),
-            (title: "3", buttonTitle: "return", action: .custom(completion)),
-            presentationType: .modal
+            (title: "3", buttonTitle: "return", action: .custom(completion))
         )
     }
 }

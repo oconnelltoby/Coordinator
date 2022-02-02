@@ -11,11 +11,6 @@ struct Router {
     weak var navigationController: UINavigationController?
     
     func nextButtonPressed() {
-        SecondaryCoordinator(
-            navigationController: navigationController,
-            completion: { [weak navigationController] in
-                navigationController?.dismiss(animated: true)
-            }
-        ).start()
+        SecondaryCoordinator(navigationController: navigationController).start()
     }
 }

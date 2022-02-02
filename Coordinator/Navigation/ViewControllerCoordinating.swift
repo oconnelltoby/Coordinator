@@ -7,16 +7,18 @@
 
 import UIKit
 
-protocol ViewControllerCoordinating: Coordinating {}
+enum PresentationType {
+    case modal
+    case push
+}
+
+protocol ViewControllerCoordinating: Coordinating {
+    var presentationType: PresentationType { get }
+}
 
 enum ViewControllerButtonAction {
     case presentNext
     case custom(() -> Void)
-}
-
-enum PresentationType {
-    case modal
-    case push
 }
 
 extension ViewControllerCoordinating {
@@ -38,8 +40,7 @@ extension ViewControllerCoordinating {
     }
     
     func showScreens(
-        _ screens: (title: String, buttonTitle: String, action: ViewControllerButtonAction)...,
-        presentationType: PresentationType
+        _ screens: (title: String, buttonTitle: String, action: ViewControllerButtonAction)...
     ) {
         switch presentationType {
         case .modal:
