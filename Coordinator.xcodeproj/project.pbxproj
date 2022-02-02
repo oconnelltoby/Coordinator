@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F151C5BC27AAFCE200BCC00B /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F151C5BB27AAFCE200BCC00B /* BarButtonItem.swift */; };
 		F1750AC3271A253500455B03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AC2271A253500455B03 /* AppDelegate.swift */; };
 		F1750AC5271A253500455B03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AC4271A253500455B03 /* SceneDelegate.swift */; };
 		F1750AC7271A253500455B03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1750AC6271A253500455B03 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F151C5BB27AAFCE200BCC00B /* BarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItem.swift; sourceTree = "<group>"; };
 		F1750ABF271A253500455B03 /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1750AC2271A253500455B03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1750AC4271A253500455B03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				F1750AC6271A253500455B03 /* ViewController.swift */,
 				F1750B01271A2BAA00455B03 /* ViewModel.swift */,
 				F1750AFD271A28CD00455B03 /* View.swift */,
+				F151C5BB27AAFCE200BCC00B /* BarButtonItem.swift */,
 				F1750ACB271A253600455B03 /* Assets.xcassets */,
 				F1750ACD271A253600455B03 /* LaunchScreen.storyboard */,
 				F1750AD0271A253600455B03 /* Info.plist */,
@@ -305,6 +308,7 @@
 				F1750AFE271A28CD00455B03 /* View.swift in Sources */,
 				F1750AF9271A285500455B03 /* Coordinating.swift in Sources */,
 				F1750B08271ABEBF00455B03 /* ViewControllerCoordinating.swift in Sources */,
+				F151C5BC27AAFCE200BCC00B /* BarButtonItem.swift in Sources */,
 				F1750AC5271A253500455B03 /* SceneDelegate.swift in Sources */,
 				F1750B02271A2BAA00455B03 /* ViewModel.swift in Sources */,
 				F1750B04271A333100455B03 /* SecondaryCoordinator.swift in Sources */,
