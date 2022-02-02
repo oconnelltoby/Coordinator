@@ -18,11 +18,14 @@ class InitialCoordinator: ViewControllerCoordinating {
         showScreens(
             (title: "A", buttonTitle: "Go to B", action: .presentNext),
             (title: "B", buttonTitle: "Go to C", action: .presentNext),
-            (title: "C", buttonTitle: "Present Modal", action: .custom(showSecondaryCoordinator))
+            (title: "C", buttonTitle: "Show Routing Screen", action: .custom(showRoutingViewController))
         )
     }
     
-    private func showSecondaryCoordinator() {
-        ModalCoordinator(navigationController: navigationController, builder: SecondaryCoordinator.init).start()
+    private func showRoutingViewController() {
+        let router = Router(navigationController: navigationController)
+        let viewModel = RoutingViewModel(title: "Routing", buttonTitle: "Present Modal", router: router)
+        let viewController = RoutingViewController(viewModel: viewModel)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
